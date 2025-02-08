@@ -1,0 +1,55 @@
+
+/* css에서 띄어쓰기: ~ 안에 있는 */
+
+.list{
+    background-color: dodgerblue;
+}
+
+
+/* 자식 선택자 "리스트 클래스 안에 있는 첫 번째 자식 li를 찾고 색상칩 주기  */
+
+/* 친자식 선택자- .list 뒤에 ">" 추가 */
+.list{ > li:nth-child(1){
+    background-color: hotpink;
+}
+}
+
+
+/* 리스트 클래스 안에 있는 모든 메뉴 클래스 찾자! */
+/* .list .menu{
+    background-color: orange;
+} */
+
+
+/* 리스트 클래스 안에 있는 친자식 메뉴 클래스 찾자! */
+/* .list > .menu{
+    background-color: orange;
+} */
+
+/* 리스트 클래스와 메뉴 클래스를 함께 가지고 있는 대상을 찾자! */
+.list.menu{
+    background-color: orange;
+}
+
+#depth{
+    background-color: greenyellow;
+}
+
+.menu{
+    background-color: darkblue !important ;
+}
+
+/* div이면서 menu 태그에 색상칩 주자! */
+div.menu{
+    background-color: salmon;
+}
+
+/* CSS Nesting */
+.container{
+    .paragraph{
+        background-color: orange;
+    &:hover{
+        background-color: green;
+    }
+}
+}

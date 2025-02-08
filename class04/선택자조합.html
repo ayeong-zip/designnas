@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/선택자조합.css" />
+  </head>
+  <body>
+    <h1>선택자 조합</h1>
+    <ul class="list">
+      <li>menu01</li>
+      <li class="menu">menu02</li>
+      <li>
+        menu03
+        <ul>
+          <li class="list menu" id="depth">depth01</li>
+          <li class="menu">depth02</li>
+        </ul>
+      </li>
+    </ul>
+    <div class="menu">another menu</div>
+    <ul class="container">
+      <li>list</li>
+      <li>list</li>
+      <li>
+        <ul>
+          <li>depth</li>
+          <li>
+            depth
+            <p class="paragraph">hello</p>
+          </li>
+          <li class="newItem">
+            <div>
+              <p class="paragraph">hello</p>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>

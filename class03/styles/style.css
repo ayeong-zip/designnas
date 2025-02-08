@@ -1,0 +1,31 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    margin-bottom: 10px;
+  }
+/* id 선택자 (잘 안씀) */
+  #box{ 
+    background-color: dodgerblue;
+
+  } 
+/* class 선택자 */
+  .box{ 
+    background-color: hotpink;
+  }
+
+/* 속성 선택자 */
+  div[name="tiger"]{
+    background-color: red;
+  }
+
+div:hover{
+  background-color: black;
+}
+
+input:focus{
+  background-color: skyblue;
+}
+a: :visited{
+  color:
+}

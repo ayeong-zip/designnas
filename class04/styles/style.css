@@ -1,0 +1,54 @@
+h1 {
+    color: #ff0000;
+}
+
+figure{
+    background-color: orange;
+}
+
+.fig{
+    background-color: dodgerblue;
+}
+
+.first{
+    font-size: 30px;
+    color: orange;
+}
+
+.second{
+    font-size: 15px;
+    color: dodgerblue;
+}
+
+a{
+    text-decoration: none;
+}
+
+.list{
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    list-style: none;
+    height: 150px;
+    overflow-y: scroll;
+}
+
+.item01{
+    width: 100px;
+    height: 100px;
+    background-color: dodgerblue;
+}
+
+.item02{
+    width: 100px;
+    height: 100px;
+    background-color: orange
+    ;
+}
+
+.item03{
+    width: 100px;
+    height: 100px;
+    background-color: hotpink
+    ;
+}
