@@ -1,0 +1,24 @@
+
+
+.class_box{
+    background-color: #349eda
+    ;
+}
+#id_box {
+    background-color: #54c741;
+}
+
+
+img {
+    width: 10px;
+    height: 10px;
+  }
+.profile{
+    font-size: 1.6rem;
+    color: aqua;
+}
+
+.list{
+    font-size: 1.6rem;
+    color: aqua;
+}

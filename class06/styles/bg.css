@@ -1,0 +1,25 @@
+
+
+
+/* 
+.bg{
+    width: 678px;
+    height: 1356px;
+    background-image: url(../chillbeach1.jpg);
+} */
+
+.bg{
+    width: 100px;
+    height: 100px;
+    background-image: url(../chillbeach1.jpg);
+    /* background-size: contain;   */
+    /* 이미지 잘리지 않게 도와줌 */
+    background-repeat: no-repeat;  
+    /* 이미지 하나만 fit하게 들어가도록 도와줌 */
+    background-size: cover; /* fit하게 들어가되 이미지가 잘릴 수 있음 */
+/* background-position: 10px 0; */
+background-position: center;
+
+
+}
+

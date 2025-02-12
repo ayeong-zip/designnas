@@ -1,0 +1,96 @@
+
+
+body{
+    height: 5000px;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+}
+
+.box1{
+    background-color: dodgerblue;
+
+/* "포지션 relative" "마진 0 auto" 세트로 암기*- but, 무조건 요소가 1층에 있을 때만!! 적용됨(기준점:자신) */
+    position: relative;
+    margin: 0 auto; 
+    
+    /* left: 400px;
+    top: 400px; */
+}
+
+.box2{
+    background-color: darkblue;
+}
+
+
+/* wrap 배경을 기준점으로 레이아웃 틀 짜기 */
+.wrap{
+    width: 600px;
+    height: 600px;
+    /* height: initial;  */
+    /* 초기화 */
+    background-color: hotpink;
+    position: relative;
+    /* absolute를 가진 list 1의 부모로 relative 설정 기준점! */
+}
+
+.wrap .list1{
+    background-color: cyan
+    /* float: left;  */
+    /* 공중에 뜨고 다음 블럭요소가 올라감 */
+    /* position: absolute;
+    right: 0; 
+    bottom: 0; */
+
+    /* abosolute -> x축, y축 골라서 적어줘야 함! */
+
+}
+
+.wrap .list2{
+    background-color: yellow;
+    /* 요소가 2층일 때, 포지션 "absolute"! 암기*- (기준점:부모)  */
+    position: absolute; 
+    right: 0; 
+    top: 0;
+}
+
+.wrap .list3{
+    background-color: dodgerblue;
+    position: absolute;
+    left: 0; 
+    bottom: 0;
+}
+
+.wrap .list4{
+    background-color: green;
+    position: absolute;
+    right: 0; 
+    bottom: 0;
+}
+
+.wrap .list5{
+    background-color: black;
+    position: absolute;
+    left: 50%; 
+    top: 50%;
+    /* 'translate(+,-)' 코드 넣으면 기준점이 되는 wrap크기가 변해도 list5 가운데 정렬 가능! */
+    translate: -50% -50%;
+    
+}
+
+.box{
+    width: 400px;
+    height: 300px;
+    background-color: black;
+    /* 포지션 "fixed" : left:0 -> 팝업창 / bottom:0 -> 버튼 (기준점:브라우저) */
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+}
+
+
+
+

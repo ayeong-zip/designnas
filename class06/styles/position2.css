@@ -1,0 +1,52 @@
+body{
+    position: relative;
+}
+
+.white{
+    height: 1000px;
+}
+
+.green{
+    width: 600px; 
+    height: 400px; 
+    background-color: green;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+}
+
+
+.green .box1{
+    width: 300px;
+    height: 150px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+}
+
+.green .box2{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.green .box3{
+    width: 40px;
+    height:40px;
+    background-color: black;
+    position: absolute;
+    right: -40px;
+    top: -40px;
+}
+
+
+.gray{
+    height: 1000px;
+    background-color: gray;
+}
