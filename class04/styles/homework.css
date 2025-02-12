@@ -18,6 +18,7 @@ h2{
 }
 div#box-1.box{
     background-color: yellow;
+    border: 1px solid black;
 }
 
 .list-section>ul>li{
