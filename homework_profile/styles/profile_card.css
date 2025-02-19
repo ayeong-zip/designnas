@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+/* 전체 */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-
-
+/* 프로필 ui */
 .main{
   width: 100%;
   height: 100vh;
@@ -48,7 +49,7 @@
 .data h3{
   font-size: 24px;
   font-weight: 600;
-  color: rgb(131, 78, 255);
+  color: black;
 }
 span{
   font-size: 16px;
@@ -75,9 +76,67 @@ span{
   padding: 8px 25px;
   border-radius: 25px;
   font-size: 18px;
-  white-space: nowrap;
-  background: linear-gradient(to left, #33ccff 0%, #ff99cc 100%);
+  background-color: black;
 }
 .buttons .btn:hover{
   box-shadow: inset 0 5px 20px rgba(0,0,0,0.4);
+}
+
+
+
+/* pop_up container ui */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pop_up_content {
+  background: white;
+  color: gray;
+  width: 350px;
+  height: 300px;
+  padding: 10px;
+  position: relative;
+  border-radius: 8px;
+  text-align: center;
+}
+
+h2{
+  margin-top: 20px;
+  color: dodgerblue;
+}
+/* pop_up close btn */
+.popup .close_btn{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: black;
+  background-color: white;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.close_btn:hover{
+  background-color: #999;
+}
+
+/* email container box */
+.pop_up .email_box{
+  padding: 40px;
+}
+.submit_btn{
+
+  padding: 10px;
 }

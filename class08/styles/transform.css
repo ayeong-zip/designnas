@@ -1,0 +1,100 @@
+
+
+.boxes{
+    width: 200px;
+    height: 200px;
+}
+
+ /* before, 가상선택자에 transition 넣어주기 */
+ /* &(=and 연산자) 앰퍼센드, 그리고 */
+ /* |||(=or 연산자) 파이프라인, 또는 */
+ /* ``` 빽팁 (영문에서 shift 없이, 물결표시만 넣을 때) */
+
+
+ /* animation기능, 1. transform 명령어 사용하기! (no, margin padding leftt right top buttom */
+ /* animation의 기준점: 중앙 2. 기준점 바꾸기 명령어: transform-origin: */
+ .box01{
+    background-color: red;
+    transition: all 1s; 
+    margin-left: 0; /* 간격 만들기*/
+   
+    /* after */
+    &:hover{
+        background-color: black;
+        margin-left: 30px;
+    }
+}
+
+
+.box02{
+    background-color: orange;
+    transition: all 0.3s;
+
+    &:hover{
+        /* transform: translateY(-30px); */
+        /* transform: translateY(30px); */
+        /* translate:-5px, -5px; */
+        translate:-5px, 0;
+        box-shadow: 5px 4px 9px #cecece;  
+        /* 개발자도구에서 custom가능! */
+    }
+}
+.box03{
+    background-color: dodgerblue;
+    transition: all 1s cubic-bezier(0.93, -0.29, 0.31, 1.29);
+
+    &:hover{
+        /* (1): 원래크기 */
+        transform: scale(2);
+        scale:2;
+        /* height: 500px; */
+        /* 아코디언 ui */
+
+    }
+}
+
+/* 부모를 hover시키고, 자식을 움직인다. 
+
+.box04{
+    background-color: hotpink;
+    transition: all 1s;
+    transform-origin: left top;
+    &:hover{
+        /* 360도 회전 ui, rotate(deg:degree) *//* transform: rotate(360deg); *//* rotate: 360deg; */
+
+.box04{
+    border: 1px solid black;
+
+    &:hover .box{
+        rotate: 360deg;
+    }
+
+    .box{
+        width: 200px;
+        height: 200px;
+        background-color: hotpink;
+        transition: all 1s;
+        transform-origin: left top;
+    }
+}
+.box05{
+    background-color: green;
+    position: fixed;
+    right: 0; top: 0;
+    /* left: 0; right: 0; */
+
+    transform: translateX(100%);
+    animation: text infinite 1s;
+}
+
+@keyframes text{
+    0%{
+        transform: translate(0);
+    }
+    100%{
+        transform: translate(-200px);
+    }
+}
+
+
+
